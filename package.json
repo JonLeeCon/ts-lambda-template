@@ -1,0 +1,21 @@
+{
+  "name": "lambda-consumer",
+  "version": "1.0.0",
+  "description": "Lambda code for consuming from SQS and invoking Lambda execution",
+  "main": "build/index.js",
+  "repository": "git@github.com:UpChannel/lambda-consumer.git",
+  "author": "Jonathan Constantinides <jonleecon@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "clean": "rm -r ./node_modules && rm -r ./build",
+    "clean-dev": "rm -r ./node_modules",
+    "zip": "zip -r lambda-notifications.zip . -x '.vscode' -x '.src'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "@types/node": "^10.3.2",
+    "typescript": "^2.9.1"
+  }
+}
